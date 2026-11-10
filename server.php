@@ -34,6 +34,7 @@ define('NO_DEBUG_DISPLAY', true);
 // Mark this as a web service server script.
 define('WS_SERVER', true);
 
+// phpcs:ignore moodle.Files.RequireLogin.Missing -- Token-auth WS endpoint; auth runs in server::run().
 require('../../config.php');
 
 // Check if the MCP protocol is enabled.
